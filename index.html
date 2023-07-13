@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <script
+      type="text/javascript"
+      src="http://login2explore.com/jpdb/resources/js/0.0.3/jpdb-commons.js"
+    ></script>
+    <script type="text.javascript" src="/index.js"></script>
+    <title>Shipment Management App</title>
+  </head>
+  <body>
+    <h1>Shipment Management Form</h1>
+    <form method="get">
+      <div class="mb-3">
+        <label for="Shipment-No" class="form-label">Shipment-No</label>
+        <input
+          type="text"
+          class="form-control"
+          id="Shipment-No"
+          onchange="getNo()"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="Description" class="form-label">Description </label>
+        <input type="text" class="form-control" id="Description" />
+      </div>
+      <div class="mb-3">
+        <label for="Source" class="form-label">Source </label>
+        <input type="text" class="form-control" id="Source" />
+      </div>
+      <div class="mb-3">
+        <label for="Destination" class="form-label">Destination </label>
+        <input type="text" class="form-control" id="Destination" />
+      </div>
+      <div class="mb-3">
+        <label for="Shipping-date" class="form-label">Shipping-Date </label>
+        <input type="text" class="form-control" id="Shipping-date" />
+      </div>
+      <div class="mb-3">
+        <label for="Expected-Delivery-date" class="form-label"
+          >Expected-Delivery-Date
+        </label>
+        <input type="text" class="form-control" id="Expected-Delivery-date" />
+      </div>
+
+      <button
+        type="button"
+        id="save"
+        class="btn btn-primary"
+        onclick="saveData()"
+        disabled
+      >
+        Save
+      </button>
+      <button
+        type="button"
+        id="update"
+        class="btn btn-primary"
+        onclick="updateData()"
+        disabled
+      >
+        Update
+      </button>
+      <button
+        type="button"
+        id="reset"
+        class="btn btn-primary"
+        onclick="resetData()"
+        disabled
+      >
+        Reset
+      </button>
+    </form>
+  </body>
+</html>
